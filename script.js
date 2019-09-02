@@ -10,7 +10,7 @@ for (let i = 9; i >= 1; i--) {
   number.setAttribute('style', 'width:70px; height:75px; margin:5px 5px;')
   number.innerHTML = i
   number.addEventListener('click', function (e) {
-    if (write.innerHTML === 0) { write.innerHTML = '' }
+    if (write.innerHTML == 0) { write.innerHTML = '' }
     write.innerHTML += e.target.innerHTML
     between += e.target.innerHTML
   })
